@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .menu {
+        justify-content: flex-start;
+        list-style: none;
+        display: flex;
+        border-bottom: 2px solid rgb(105, 105, 105);
+        padding: 0.5rem;
+      }
+
+      .menu-item {
+        padding: 0.2rem 0.5rem;
+        /* border-bottom: 2px solid rgb(105, 105, 105); */
+        background-color: rgb(255, 215, 255);
+        border-right: 2px solid rgb(105, 105, 105);
+        /* border-radius: 0.25rem 0.25rem 0 0; */
+        cursor: pointer;
+      }
+
+      .menu-item:hover {
+        background-color: rgb(252, 142, 252);
+      }
+
+      .remove-border-left {
+        border-right: 0 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <ul class="menu">
+            <li class="menu-item">Home</li>
+            <li class="menu-item">Student List</li>
+            <li class="menu-item">Add New Student</li>
+            <li class="menu-item">Add New Student</li>
+            <li class="menu-item remove-border-left">Add New Student</li>
+          </ul>
+        </nav>
+      </header>
+    </main>
+  </body>
+</html>

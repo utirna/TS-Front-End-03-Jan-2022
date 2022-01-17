@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+      }
+      .d-flex {
+        display: flex;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-space-evenly {
+        justify-content: space-evenly;
+      }
+
+      .container {
+        width: 100vw;
+        background-color: rgb(248, 192, 192);
+      }
+
+      .header,
+      footer {
+        width: 100vw;
+        height: 10vh;
+        border: 1px solid black;
+        align-items: center;
+      }
+      .company {
+        width: 100vw;
+        border: 1px solid black;
+        padding: 0.5rem;
+      }
+      .company-info {
+        border: 1px solid black;
+        height: 35vh;
+      }
+      .clients {
+        width: 100vw;
+        border: 1px solid black;
+        padding: 0.5rem;
+      }
+      .clients-info {
+        width: 15%;
+        border: 1px solid black;
+        height: 10vh;
+        margin: 0 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header justify-center d-flex">Header</header>
+      <section class="company d-flex justify-space-evenly">
+        <article class="company-info">Company Info-1</article>
+        <article class="company-info">Company Info-2</article>
+        <article class="company-info">Company Info-3</article>
+      </section>
+      <section class="clients justify-center d-flex">
+        <article class="clients-info">Client-1</article>
+        <article class="clients-info">Client-2</article>
+        <article class="clients-info">Client-3</article>
+        <article class="clients-info">Client-4</article>
+        <article class="clients-info">Client-5</article>
+      </section>
+      <footer class="footer justify-center d-flex">Footer</footer>
+      <footer class="footer-2 d-flex justify-center">Footer-2</footer>
+    </main>
+  </body>
+</html>
