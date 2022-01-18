@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .block-1 {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(221, 147, 10);
+        background-image: url(./images/img-5.png), url(./images/img-1.jpg);
+        color: white;
+        background-repeat: no-repeat;
+        background-position: 50% 60%, center;
+        background-size: 400px, cover;
+        background-attachment: fixed;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login {
+        padding: 2.5rem 5rem;
+
+        border-radius: 1rem;
+        border: 2px solid white;
+        backdrop-filter: blur(20px);
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem 0;
+      }
+      .form-label {
+        font-size: 1.5rem;
+        color: rgb(66, 3, 124);
+      }
+      .form-input {
+        padding: 0.4rem 0.8rem;
+        font-size: 1.2rem;
+        outline: 0;
+        border: 1px solid black;
+        border-radius: 1.5rem;
+        margin-left: 0.8rem;
+      }
+      .btn {
+        width: 50%;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        border-radius: 0 0.8rem;
+        border: 0;
+        background-color: rgb(7, 207, 7);
+        font-size: 1.2rem;
+        color: white;
+        box-shadow: 0 0 5px 1px darkgreen;
+        cursor: pointer;
+      }
+      .btn:hover {
+        box-shadow: 0 0 0px 0px darkgreen;
+        background-color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="block-1">
+        <section class="login">
+          <form class="form">
+            <div class="form-group">
+              <label for="" class="form-label">User Name</label>
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Enter UserName"
+              />
+            </div>
+            <div class="form-group">
+              <label for="" class="form-label">Password</label>
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Enter Password"
+              />
+            </div>
+            <button class="btn">Submit</button>
+          </form>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
