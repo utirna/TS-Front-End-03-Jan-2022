@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        width: 50vw;
+        height: 10vh;
+        border: 1px solid;
+      }
+      .section-1 {
+        background-color: red;
+      }
+
+      /* position */
+      .section-2 {
+        background-color: green;
+        position: relative;
+        left: 200px;
+        top: 200px;
+
+        z-index: 1;
+      }
+
+      .section-3 {
+        background-color: violet;
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section-1">Section-1</section>
+    <section class="section-2">Section-2</section>
+    <section class="section-3">Section-3</section>
+  </body>
+</html>

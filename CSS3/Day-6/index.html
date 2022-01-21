@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 300vh;
+      }
+      .grand-parent {
+        background-color: rgb(250, 136, 136);
+        margin-top: 100px;
+        width: 70vw;
+        height: 60vh;
+        border: 1px solid;
+        position: relative;
+      }
+
+      .parent {
+        background-color: rgb(136, 250, 206);
+        margin-top: 20px;
+        padding-top: 20px;
+        width: 50vw;
+        height: 40vh;
+        border: 1px solid;
+        position: relative;
+      }
+
+      .child-1 {
+        background-color: rgb(74, 9, 226);
+        width: 30px;
+        height: 30px;
+        border-radius: 40px;
+        border: 1px solid black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+
+        position: absolute;
+        right: -15px;
+        top: -15px;
+      }
+
+      .child-2 {
+        background-color: rgb(168, 4, 173);
+        width: 30vw;
+        height: 10vh;
+        border: 1px solid;
+      }
+      .child-3 {
+        background-color: rgb(41, 4, 173);
+        width: 100vw;
+        height: 10vh;
+        border: 1px solid;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+      }
+      .child-4 {
+        background-color: rgb(128, 3, 71);
+        width: 20vw;
+        height: 10vh;
+        border: 1px solid;
+        position: sticky;
+        top: 100px;
+        z-index: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grand-parent">
+      <section class="parent">
+        <section class="child-1">X</section>
+        <section class="child-2"></section>
+        <section class="child-3"></section>
+      </section>
+    </section>
+    <section class="child-4"></section>
+    <section class="grand-parent">
+      <section class="parent">
+        <section class="child-1">X</section>
+        <section class="child-2"></section>
+        <section class="child-3"></section>
+      </section>
+    </section>
+  </body>
+</html>

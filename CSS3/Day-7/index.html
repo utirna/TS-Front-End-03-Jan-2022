@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        padding: 0.5rem 3rem;
+        font-size: 2rem;
+        cursor: pointer;
+        background-color: darkmagenta;
+        color: white;
+
+        animation-name: rotate;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-timing-function: linear;
+      }
+
+      button:hover {
+        animation-duration: 0.2s;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* animation: ; */
+
+      /*  animation-name:  state/stateless animation;
+        animation-duration: ;
+        animation-delay: ;
+        animation-timing-function: ;
+        animation-iteration-count: ;
+        animation-fill-mode: ;
+        animation-direction: ;
+        animation-play-state: ;*/
+
+      /* .ban {
+        cursor: no-drop;
+      }
+      .hand {
+        cursor: pointer;
+      } */
+    </style>
+  </head>
+  <body>
+    <button>CLICK</button>
+    <button>CLICK</button>
+    <button>CLICK</button>
+  </body>
+</html>
