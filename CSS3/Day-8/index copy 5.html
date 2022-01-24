@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Day8 CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .text::after {
+        content: '"';
+        color: red;
+      }
+      .text::before {
+        content: '"';
+        color: red;
+      }
+
+      .text > span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="text">HELLO CSS</p>
+    <p class="text">Hello HTML</p>
+  </body>
+</html>

@@ -1,58 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Day-7</title>
+    <title>Day8 CSS</title>
     <style>
       * {
-        box-sizing: border-box;
-        padding: 0;
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
-      section {
-        height: 10vh;
-        width: 40vh;
-        border: 1px solid black;
+      .text {
+        padding: 1rem;
       }
-      .grand-parent {
-        width: 80vh;
-        height: 80vh;
-        background-color: rgb(10, 78, 105);
-        padding-top: 3rem;
-        margin-top: 3rem;
-        position: relative;
+      .text::selection {
+        background-color: darkmagenta;
+        color: white;
       }
-      .parent {
-        width: 60vh;
-        height: 60vh;
-        background-color: rgb(253, 176, 176);
-        padding-top: 3rem;
-        position: relative;
+      .text::first-letter {
+        font-size: 2rem;
       }
-
-      .child-1 {
-        background-color: green;
+      .text::after {
       }
-
-      .child-2 {
-        background-color: red;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
-
-      .child-3 {
-        background-color: magenta;
+      .text::before {
       }
     </style>
   </head>
   <body>
-    <main class="grand-parent">
-      <main class="parent">
-        <section class="child-1">child-1</section>
-        <section class="child-2"></section>
-        <section class="child-3">child-3</section>
-      </main>
-    </main>
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure unde quo
+      facilis temporibus cumque impedit ea autem corrupti illo ipsa numquam
+      eaque deserunt deleniti, minima quis iusto voluptatibus aperiam facere.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, excepturi
+      quae itaque, accusamus asperiores quidem autem totam ratione inventore
+      veniam ducimus odit, id unde maxime quod nesciunt commodi suscipit
+      quibusdam!
+    </p>
   </body>
 </html>

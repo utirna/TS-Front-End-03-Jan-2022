@@ -1,42 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Day-7</title>
+    <title>Day8 CSS</title>
     <style>
       * {
-        box-sizing: border-box;
-        padding: 0;
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
-
-      section {
-        height: 10vh;
-        width: 40vh;
-        border: 1px solid black;
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
-
-      .bg-green {
-        background-color: green;
-      }
-
-      .bg-red {
+      /*  li:first-child {
         background-color: red;
-        position: absolute;
-
-        right: 0px;
-        bottom: 0px;
       }
-
-      .bg-magenta {
-        background-color: magenta;
+      li:last-child {
+        background-color: rgb(7, 10, 211);
+      }
+      li:nth-child(6) {
+        background-color: green;
+      }*/
+      li:nth-child(odd) {
+        background-color: red;
+      }
+      li:nth-child(even) {
+        background-color: rgb(152, 241, 130);
       }
     </style>
   </head>
   <body>
-    <main>
-      <section class="bg-green">Section-1</section>
-      <section class="bg-red">Section-2</section>
-      <section class="bg-magenta">Section-3</section>
-    </main>
+    <ul>
+      <li>Items-1</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+    </ul>
   </body>
 </html>

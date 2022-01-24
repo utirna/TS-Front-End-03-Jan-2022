@@ -1,46 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Day-7</title>
+    <title>Day8 CSS</title>
     <style>
       * {
-        box-sizing: border-box;
-        padding: 0;
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
 
-      section {
-        height: 10vh;
-        width: 40vh;
-        border: 1px solid black;
+      button {
+        padding: 1rem 5rem;
+        border: 0;
+        box-shadow: 0 0 0.3rem 0 gray;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.5rem;
+        transition-property: box-shadow, padding;
+        transition-duration: 0.5s;
       }
 
-      .bg-green {
-        background-color: green;
+      button:hover {
+        box-shadow: 0 0 0.5rem 0.1rem gray;
+        padding: 1rem 7rem;
       }
-
-      .bg-red {
-        background-color: red;
-        position: relative;
-        left: 200px;
-        top: 200px;
-
-        z-index: 2;
+      button:active {
+        background-color: #c9c9c9;
       }
-
-      .bg-magenta {
-        background-color: magenta;
-        position: relative;
-
-        z-index: 3;
+      input {
+        padding: 0.2rem 0.5rem;
+        border: 2px solid;
+        border-radius: 2rem;
+      }
+      input:focus {
+        background-color: lightgreen;
       }
     </style>
   </head>
   <body>
-    <main>
-      <section class="bg-green">Section-1</section>
-      <section class="bg-red">Section-2</section>
-      <section class="bg-magenta">Section-3</section>
-    </main>
+    <button>CLICK</button>
+    <input type="text" />
+    <input type="text" />
+
+    <ul>
+      <li>Items</li>
+    </ul>
   </body>
 </html>

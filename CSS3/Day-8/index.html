@@ -1,78 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Day-7</title>
+    <title>Day8 CSS</title>
     <style>
       * {
-        box-sizing: border-box;
-        padding: 0;
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
+
       body {
-        height: 200vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
       }
       section {
-        height: 10vh;
-        width: 40vh;
-        border: 1px solid black;
-      }
-      .grand-parent {
-        width: 80vh;
-        height: 80vh;
-        background-color: rgb(255, 255, 255);
-        padding-top: 3rem;
-        margin-top: 3rem;
-        position: relative;
-      }
-      .parent {
-        width: 60vh;
-        height: 60vh;
-        background-color: rgb(253, 176, 176);
-        padding-top: 3rem;
-        position: relative;
+        width: 25%;
+        border: 1px solid;
+        height: 25vh;
       }
 
-      .child-1 {
-        background-color: green;
-        position: sticky;
-        top: 20px;
+      @media screen and (max-width: 900px) and (min-width: 699px) {
+        section {
+          width: 50%;
+        }
+        section > button {
+          background-color: green;
+        }
       }
 
-      .child-2 {
-        background-color: red;
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        border-radius: 40px;
-        top: -20px;
-        right: -20px;
+      @media screen and (max-width: 700px) {
+        section {
+          width: 100%;
+        }
+        .adds {
+          display: none;
+        }
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        cursor: pointer;
-      }
-
-      .child-3 {
-        background-color: magenta;
-        position: fixed;
-        bottom: 10%;
-        right: 4rem;
-        width: 4rem;
+        section > button {
+          width: 100%;
+        }
       }
     </style>
   </head>
   <body>
-    <main class="grand-parent">
-      <main class="parent">
-        <section class="child-1">child-1</section>
-        <section class="child-2">X</section>
-        <section class="child-3">child-3</section>
-      </main>
-    </main>
-
-    <section class="child-1">child-1</section>
-    <section>Hello</section>
+    <section>
+      section1
+      <button>CLICK</button>
+    </section>
+    <section>section2</section>
+    <section>section3</section>
+    <section class="adds">section4</section>
   </body>
 </html>
