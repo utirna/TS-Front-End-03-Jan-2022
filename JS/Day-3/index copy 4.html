@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Day-3 JS</title>
+    <style>
+      .changeTextDesign {
+        color: white;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="change-text">Hello</h1>
+    <h1>HTML</h1>
+    <h1>HTML</h1>
+    <h1 class="change-text">HTML</h1>
+    <h1>HTML</h1>
+    <h1>HTML</h1>
+    <p class="change-text">This is para</p>
+    <script>
+      var changeText = document.getElementsByClassName("change-text");
+
+      for (const index in changeText) {
+        if (isNaN(index) === false) {
+          var text = changeText[index].innerHTML;
+          changeText[index].innerHTML = text + " Om Sai";
+          changeText[index].style.backgroundColor = "red";
+          changeText[index].style.color = "#ffffff";
+        }
+      }
+    </script>
+  </body>
+</html>

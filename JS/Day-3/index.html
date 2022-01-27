@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Day-3 JS</title>
+    <style>
+      .changeTextDesign {
+        color: white;
+        background-color: green;
+        animation: blink 0.2s infinite;
+      }
+
+      @keyframes blink {
+        100% {
+          color: green;
+          background-color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="change-text changeTextDesign">Hello</h1>
+    <h1>HTML</h1>
+    <h1>HTML</h1>
+    <h1 class="change-text changeTextDesign">HTML</h1>
+    <h1>HTML</h1>
+    <h1>HTML</h1>
+    <p class="change-text changeTextDesign">This is para</p>
+    <script>
+      var changeText = document.getElementsByClassName("change-text");
+
+      setTimeout(function () {
+        for (const index in changeText) {
+          if (isNaN(index) === false) {
+            var text = changeText[index].innerHTML;
+            changeText[index].innerHTML = text + " Om Sai";
+            changeText[index].classList.add("changeTextDesign");
+          }
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>
